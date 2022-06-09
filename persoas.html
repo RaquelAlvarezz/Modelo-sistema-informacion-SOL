@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizo de Orientación Laboral</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="https://ab-ad.eu/10103-large_default/bandera-de-vigo.jpg"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+    
+        <nav>
+            
+            <ul>
+                <div class="logo"><img src="img/logo-concello-de-vigo.png"   height="30%" width="40%" > </div>
+                <a href="./index.html"><li>Inicio</li></a>
+                <a href="./citas.html"><li>Citas</li></a>
+                <a href="empresas.html"><li>Empresas</li></a>
+                <a href="./persoas.html"><li>Persoas</li></a>
+                <input type="text" class="search-input" placeholder="Busca...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <a href="./usuario.html"><li>Inicio/peche de sesión<i class="fas fa-user-alt"></i></li></a>
+                
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br><br><br>
+        <div class="container" style="max-width: 650px; min-width: 400px;">
+          <div class="card">
+            <h2 class="card-header text-center">Formulario de Rexistro</h2>
+            <div class="card-body">
+              <form id="myForm" onsubmit="return validar()">
+                <div class="form-group">
+                  <label for="user">Usuario:</label>
+                  <input type="text" class="form-control" id="user" placeholder="Usuario">
+                  <label for="email">Correo Electrónico:</label>
+                  <input type="email" class="form-control" id="email" placeholder="usuario@vigo.org">
+                  <label for="Pass1">Contrasinal:</label>
+                  <input type="password" class="form-control" id="pass1" placeholder="Contrasinal">
+                  <label for="pass2">Rep. Contrasinal:</label>
+                  <input type="password" class="form-control" id="pass2" placeholder="Repetir Contrasinal">
+                  <label for="codipos">Código Postal:</label>
+                  <input type="text" class="form-control" id="codipos" placeholder="Código Postal">
+                </div>
+        
+                <div class="form-group">
+                  <label for="sexo">Sexo:</label>
+                  <input type="radio" id="sexo" name="sexo"> Masculino
+                  <input type="radio" id="sexo" name="sexo"> Femenino <br>
+                  <input type="radio" id="sexo" name="sexo"> Outro <br>
+                  <label for="ciudad">Cidade:</label>      
+                    <select class="form-control" id="ciudad">
+                      <option value="Seleccionar">Seleccionar</option>
+                      <option value="Vigo">Vigo</option>
+                      <option value="Pontevedra">Pontevedra</option>
+                      <option value="Mos">Mos</option>
+                    </select>      
+                  <label for="terminos"></label><br>
+                  <input type="checkbox" id="terminos"> Acepto os términos e condicións          
+                </div>
+                <input type="submit" class="btn btn-success" id="boton" value="Identificarse">
+              </form>
+            </div>
+          </div>
+        </div>
+          
+    </main>
+    <footer><br><p>Concello de Vigo,2022. All rights reserved &copy;.</p><br></footer>
+</body>
+
+</html>
